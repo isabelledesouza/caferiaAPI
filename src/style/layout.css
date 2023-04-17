@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&display=swap');
+
+
+
+:root {
+	--yellow:#ebc972;
+	--blue: #2a4057;
+	--white-bone: #ebe4d2;
+	--olive-green: #4f6556;
+	--hospital-green: #feb930;
+	--sm: 14px;
+	--md: 16px;
+	--lg: 18px;
+  --title: 6rem;
+
+}
+
+body {
+  background-color: var(--white-bone);
+  font-family: 'Poppins', sans-serif; 
+}
+h1, h2,h3 {
+  color:  var(--olive-green);
+  text-align: center;
+}
+.container {
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   padding: 2rem;
+  margin: auto;
+
+}
+.container-section {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  max-width: 100%;
+ 
+}
+.card-entrada {
+  
+}
+.flex-column {
+  display: grid; 
+  grid-auto-flow: column;
+}
+.container-cards {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  grid-gap: 1rem;
+  max-width: 100%;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  
+}
+img {
+  max-width: 100%;
+}
+
+.card-product {
+  border-radius: 50%;
+  height: 200px;
+}
+
+
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: $l) {
+  @content;
+}
+
+@media (min-width: $xl) {
+ 
+
+}
+
+  
+  
