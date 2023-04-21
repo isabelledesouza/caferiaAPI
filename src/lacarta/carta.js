@@ -1,28 +1,29 @@
-export default [
+const carta = [
     {
         "name": "torta de almendra",
-        "tiempo": "2000",
+        "tiempo": 6000,
         "image": "./image/tortaamendora.png"
     },
     {
         "name": "coffee",
-        "tiempo": "1000",
+        "tiempo": 2000,
         "image": "./image/coffee.png"
 
     },
     {
         "name": "torta cream cheese",
-        "tiempo": "1500",
+        "tiempo": 5000,
         "image": "./image/figotorta.png"
     },
     {
         "name": "bread",
-        "tiempo": "100",
+        "tiempo": 2000,
         "image": "./image/bread.png"
     },
     {
-        "name": "jugo de arándanora",
-        "tiempo": "100",
+        "name": "jugo de arándano",
+        "tiempo": 2000,
         "image": "./image/blueberryjuice.png"
     }
 ];
+export default carta;

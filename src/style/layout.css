@@ -7,7 +7,7 @@
 	--blue: #2a4057;
 	--white-bone: #ebe4d2;
 	--olive-green: #4f6556;
-	--hospital-green: #feb930;
+	--calltoaction: #c55939;
 	--sm: 14px;
 	--md: 16px;
 	--lg: 18px;
@@ -27,9 +27,10 @@ h1, h2,h3 {
   max-width: 1400px;
   display: flex;
   align-items: center;
-   justify-content: center;
-   padding: 2rem;
+  justify-content: center;
+  padding: 2rem;
   margin: auto;
+  position: relative;
 
 }
 .container-section {
@@ -67,22 +68,50 @@ img {
   border-radius: 50%;
   height: 200px;
 }
-
-
-
-
-@media (min-width: 768px) {
-  
+.container-modal {
+  position: absolute;
+  display: none;
 }
-
-@media (min-width: $l) {
-  @content;
-}
-
-@media (min-width: $xl) {
  
-
+.modal {
+  /*background-image: url("../image/menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  width: 60vw;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  text-align: left;
+  font-size: 1.4rem;
+  
+     
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ecded4;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 2px 8px 4px -1px rgba(216, 153, 106, 0.82);
+  background-color:#e07d4f;
+  border: none;
+  
+}
+btn:hover {
+  box-shadow: 0 0 #fff;
+  transform: translateY(1px);
 }
 
-  
+.tarjeta {
+  display: none; 
+}
+
   
