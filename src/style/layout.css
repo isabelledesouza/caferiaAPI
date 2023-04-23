@@ -111,7 +111,125 @@ btn:hover {
 }
 
 .tarjeta {
-  display: none; 
+  display: block; 
 }
 
+.container-cafeteria {
+  width: 300px;
+  height: 280px;
   
+  position: relative;
+
+
+}
+.coffee-header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  background-color: #b7c7b1;
+  border-radius: 10px;
+  z-index:10;
+  box-shadow: 0px 4px 3px -3px rgba(24, 0, 0, 0.88);
+}
+.coffee-header:before {
+  display: block;
+  content: "3 ";
+  width: 120px;
+  height: 20px;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  background-color: #fff;
+  top:90px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  background-color:#d27057;
+  box-shadow: 0px 4px 3px -3px rgba(24, 0, 0, 0.88);
+}
+.coffee-header:after {
+  display: block;
+  content: "4 ";
+  width: 40px;
+  height: 10px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  background-color: #cb826e;
+  top: 82px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 00;
+  box-shadow: 0px 4px 3px -3px rgba(24, 0, 0, 0.88);
+}
+
+.coffee-header_display{
+  width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    background-color:#cb826e;
+    border: 5px solid #d27057;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 3px -3px rgba(24, 0, 0, 0.88);
+    
+}
+.coffee-header__button-one {
+  left: 15px;
+}
+.coffee-medium {
+  width: 90%;
+  height: 160px;
+  position: absolute;
+  top: 80px;
+   left:calc(50% - 45%) ;
+  background-color:#6f8e63;
+  //top: 70%;
+  //left: 50%;
+ //transform: translate(-50%,0%);
+
+}
+/*preguntar sobre ess calc*/
+.coffee-medium:before {
+  content: "2";
+  width: 90%;
+  height: 80px;
+  background-color: #859d82;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 45%); 
+  border-radius: 40% 40% 0 0;
+}
+
+.coffee-footer {
+  width: 100%;
+  height: 30px;
+  background-color:#efc599;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  
+  background-color:#b7c7b1;
+  border-radius: 10px;
+  z-index:10;
+  transform: translate(-50%,350%);
+  box-shadow: 0px 4px 3px -3px rgba(24, 0, 0, 0.88);
+}
+
+.vol {
+  margin-left: 50%;
+    margin-top: 50%;
+    width: 40px;
+    height: 6px;
+    background-color: #f7cfa9;
+    border-radius: 20px;
+    transform: translate(-50%, -50%)rotate(37deg);
+}
+.vol:before {
+  content: "" ;
+  width: 20px;
+  height: 40px;
+  background-color: #51644e;
+}
+/*coffee cup*/ 
+
