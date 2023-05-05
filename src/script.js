@@ -35,8 +35,9 @@ carta.forEach((item) => {
 
 // **********CHECKBOX*****************
 const cardInputs = document.querySelectorAll("input[type=checkbox]");
-const containerModal = document.querySelector(".container-modal");
+const containerModal = document.querySelector(".modal-f");
 const btnCloseModal = document.querySelector(".closeModal");
+const containerMain = document.querySelector(".container-main");
 cardInputs.forEach((input) =>
   input.addEventListener("change", (e) => {
     let checked = e.target.checked;
@@ -47,6 +48,7 @@ cardInputs.forEach((input) =>
       e.target.checked = true;
       console.log("El checkbox está seleccionado");
       containerModal.style.display = "block";
+      containerMain.style.display = "none";
       // Obtener el objeto del producto seleccionado
       const selectedPedido = carta.find((item) => item.name.replace(/\s/g, "_") === e.target.id);
       console.log(selectedPedido);
@@ -80,6 +82,7 @@ cardInputs.forEach((input) =>
 /***Close Modal***/
 btnCloseModal.addEventListener("click", () => {
   containerModal.style.display = "none";
+  containerMain.style.display = "block";
 });
 window.addEventListener("click", (e) => {
   if (e.target === containerModal) {
@@ -93,6 +96,7 @@ const tarjeta = document.querySelector(".tarjeta");
 btnHacer.addEventListener("click", () => {
   containerModal.style.display = "none";
   tarjeta.style.display = "block";
+  containerMain.style.display = "block";
 });
 
 function makeAnOrder(order) {
