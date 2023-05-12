@@ -92,12 +92,24 @@ window.addEventListener("click", (e) => {
 
 /* Hacer Pedido*/
 const btnHacer = document.querySelector(".btnPedido");
+const vol = document.querySelector(".vol");
+const cafe = document.querySelector(".cafe")
 const tarjeta = document.querySelector(".tarjeta");
 btnHacer.addEventListener("click", () => {
   containerModal.style.display = "none";
   tarjeta.style.display = "block";
   containerMain.style.display = "block";
+  setTimeout(() => {
+    vol.classList.add('vol-rotate');
+  }, 2000);
+  vol.addEventListener('transitionend', () => {
+    setTimeout(() => {
+      cafe.classList.add('cafe-derramando');
+    }, 1000);
+  });
+  
 });
+
 
 function makeAnOrder(order) {
   return new Promise(function (resolve, reject) {
